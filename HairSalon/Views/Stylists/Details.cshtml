@@ -1,8 +1,10 @@
+@using HairSalon.Models;
 @model HairSalon.Models.Stylist
+
 
 <h1>Stylist Details</h1>
 <hr />
-<p>@Html.DisplayNameFor(model => model.Name): @Html.DisplayFor(model => model.Name)</p>
+<p>@Html.DisplayName("Stylist Name"): @Html.DisplayFor(model => model.Name)</p>
 
 <p>@Html.ActionLink("Back to Stylist List", "Index")</p>
 

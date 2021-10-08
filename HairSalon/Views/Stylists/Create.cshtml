@@ -1,9 +1,9 @@
 @model HairSalon.Models.Stylist
 
-<h1>Add a New Stylist to Hired List</h1>
+<h1>Add a New Stylist</h1>
 @using (Html.BeginForm())
 {
-  @Html.LabelFor(model => model.Name)
+  @Html.Label("Stylist Name: ")
   @Html.TextBoxFor(model => model.Name)
 
   <input type="submit" value="Add Stylist" class="btn btn=info" />
